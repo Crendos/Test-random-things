@@ -1,0 +1,421 @@
+2026-10-28T17:06:21.681941Z  INFO firestorm_launcher_lib: logging: file sink at C:\Users\<user>\AppData\Roaming\com.firestorm.launcher\logs
+2026-10-28T17:06:21.682060Z  INFO firestorm_launcher_lib: Firestorm Launcher starting version="2.0.30" target="windows" arch="x86_64"
+2026-10-28T17:06:21.682108Z  INFO firestorm_launcher_lib::config: Config loaded
+2026-10-28T17:06:22.405674Z  INFO splash: mount
+2026-10-28T17:06:22.406466Z  INFO splash: updater: check() start
+2026-10-28T17:06:22.912407Z  INFO splash: updater: no update available
+2026-10-28T17:06:22.912707Z  INFO splash: handoff: no-update
+2026-10-28T17:06:23.110215Z  INFO firestorm_launcher_lib::download::service: download service: lazy-spawning on first access
+2026-10-28T17:06:23.353098Z  INFO firestorm_launcher_lib::system::geolocation: geolocation: detected country = BY
+2026-10-28T17:06:23.533557Z  INFO firestorm_launcher_lib::windows::commands: splash_done: session restore restored=true
+2026-10-28T17:06:23.533951Z  INFO firestorm_launcher_lib::windows: open_main_window: building main window width=1600.0 height=900.0
+2026-10-28T17:06:23.536205Z  INFO firestorm_launcher_lib::windows: open_main_window: main window built + shown
+2026-10-28T17:06:23.536304Z  INFO firestorm_launcher_lib::windows::commands: splash_done: tearing down aux windows
+2026-10-28T17:06:23.536340Z  INFO firestorm_launcher_lib::windows::commands: splash_done: closing splash
+2026-10-28T17:06:23.536348Z  INFO firestorm_launcher_lib::windows::commands: splash_done: complete
+2026-10-28T17:06:23.683287Z  INFO firestorm_launcher_lib::download::service: aria2c 1.37.0 ready on RPC port 16800 (attempt 1)
+2026-10-28T17:06:23.704493Z  INFO firestorm_launcher_lib::download::orchestrator: found pending downloads — front-end will pull via list_pending and render Paused cards count=1
+2026-10-28T17:06:24.072851Z  WARN firestorm_launcher_lib::tracking::commands: FlagLauncherActivity failed (ignored) error=Api { error_id: 403, error_msg: "Accesss denied" }
+2026-10-28T17:06:29.230904Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T17:06:29.237047Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=0 total_files=186
+2026-10-28T17:06:29.254964Z  INFO firestorm_launcher_lib::download::orchestrator: download started (aria2 will verify existing files) game_id=9 files=186 gids=186 zip_files=2
+2026-10-28T17:06:41.054214Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T17:06:55.604071Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=3 post_median_mb_s=4 concurrent=2
+2026-10-28T17:07:03.388394Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=5
+2026-10-28T17:07:16.638602Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=3 to=2 pre_mb_s=5 post_median_mb_s=5 lockout=150
+2026-10-28T17:09:12.807085Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=7
+2026-10-28T17:09:40.040116Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=7 post_median_mb_s=17 concurrent=3
+2026-10-28T17:09:48.415621Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=4 pre_mb_s=9
+2026-10-28T17:10:15.207725Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=9 post_median_mb_s=22 concurrent=4
+2026-10-28T17:14:58.055561Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T17:14:58.055581Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T17:17:08.745113Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=5
+2026-10-28T17:17:21.899736Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=5 post_median_mb_s=5 concurrent=2
+2026-10-28T17:17:41.912582Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=7
+2026-10-28T17:18:18.109943Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T17:18:18.109965Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T17:20:27.681782Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T17:20:40.681664Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=7 post_median_mb_s=8 concurrent=2
+2026-10-28T17:20:48.681895Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=8
+2026-10-28T17:21:01.616011Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=3 to=2 pre_mb_s=8 post_median_mb_s=8 lockout=150
+2026-10-28T17:22:33.049451Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=5
+2026-10-28T17:23:11.846576Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T17:23:11.846599Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T17:25:18.399306Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=5
+2026-10-28T17:25:33.371317Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=5 post_median_mb_s=5 concurrent=2
+2026-10-28T17:26:06.482839Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T17:26:06.482910Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T17:28:07.355628Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=6
+2026-10-28T17:28:20.363026Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=6 post_median_mb_s=7 lockout=150
+2026-10-28T17:29:50.053667Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T17:30:29.370010Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T17:30:29.370033Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T17:32:31.941908Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T17:33:14.662018Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=3 post_median_mb_s=12 concurrent=2
+2026-10-28T17:33:22.412095Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=7
+2026-10-28T17:33:59.188225Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T17:33:59.188257Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T17:36:04.604694Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=6
+2026-10-28T17:36:17.903502Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=6 post_median_mb_s=6 lockout=150
+2026-10-28T17:37:45.654741Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T17:37:58.638413Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=7 post_median_mb_s=7 lockout=150
+2026-10-28T17:39:29.622747Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T17:40:03.769621Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T17:40:03.769646Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T17:40:33.787551Z  WARN firestorm_launcher_lib::download::orchestrator: tuner (unhealthy): changeGlobalOption(max-concurrent-downloads=1) failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc)
+2026-10-28T17:42:39.157677Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T17:42:52.090835Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=7 post_median_mb_s=7 lockout=150
+2026-10-28T17:44:22.991940Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T17:44:35.909095Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=7 post_median_mb_s=7 concurrent=2
+2026-10-28T17:44:43.658692Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=7
+2026-10-28T17:45:20.037735Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T17:45:20.037753Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T17:47:21.562847Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T17:47:47.224894Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=4 post_median_mb_s=11 concurrent=2
+2026-10-28T17:47:55.007035Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=5
+2026-10-28T17:48:19.664017Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=5 post_median_mb_s=18 concurrent=3
+2026-10-28T17:48:29.398187Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=4 pre_mb_s=7
+2026-10-28T17:49:05.599922Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T17:49:05.600001Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T17:51:09.599826Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=11
+2026-10-28T17:51:26.225991Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=11 post_median_mb_s=11 lockout=150
+2026-10-28T17:52:54.691517Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=9
+2026-10-28T17:53:07.876364Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=9 post_median_mb_s=9 lockout=150
+2026-10-28T17:54:39.736637Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=8
+2026-10-28T17:54:53.169889Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=8 post_median_mb_s=5 lockout=150
+2026-10-28T17:56:40.626553Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T17:57:05.650421Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=4 post_median_mb_s=9 concurrent=2
+2026-10-28T17:57:13.409104Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=7
+2026-10-28T17:57:49.404496Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=3 to=2 pre_mb_s=7 post_median_mb_s=5 lockout=150
+2026-10-28T18:02:12.951783Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=2
+2026-10-28T18:02:37.347190Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=2 post_median_mb_s=8 concurrent=3
+2026-10-28T18:02:55.651753Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=4 pre_mb_s=11
+2026-10-28T18:03:31.532364Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:03:31.532385Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T18:06:33.208561Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=10
+2026-10-28T18:06:49.450798Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=10 post_median_mb_s=6 lockout=150
+2026-10-28T18:10:00.856920Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T18:10:34.482009Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=4 post_median_mb_s=3 lockout=150
+2026-10-28T18:11:11.661970Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:12:45.291539Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=6
+2026-10-28T18:12:58.150634Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=6 post_median_mb_s=7 concurrent=2
+2026-10-28T18:13:05.823959Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=7
+2026-10-28T18:13:42.850333Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:13:42.852401Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T18:14:12.858159Z  WARN firestorm_launcher_lib::download::orchestrator: tuner (unhealthy): changeGlobalOption(max-concurrent-downloads=1) failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc)
+2026-10-28T18:15:22.129600Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:16:27.431827Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:17:48.924159Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:21:06.072836Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:23:33.931729Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=5
+2026-10-28T18:24:19.467424Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=5 post_median_mb_s=14 concurrent=2
+2026-10-28T18:24:38.971602Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=7
+2026-10-28T18:24:55.275054Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=7 post_median_mb_s=8 concurrent=3
+2026-10-28T18:25:03.482839Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=4 pre_mb_s=9
+2026-10-28T18:25:40.735560Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:25:40.735585Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T18:28:11.047632Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=5
+2026-10-28T18:28:43.049986Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=5 post_median_mb_s=7 concurrent=2
+2026-10-28T18:28:58.147570Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=6
+2026-10-28T18:29:34.192947Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=6 post_median_mb_s=8 concurrent=3
+2026-10-28T18:30:08.662922Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=4 pre_mb_s=4
+2026-10-28T18:31:27.983046Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:31:27.983116Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T18:36:12.434909Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T18:36:25.289229Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=7 post_median_mb_s=7 lockout=150
+2026-10-28T18:38:03.540148Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T18:38:42.569577Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:38:42.569607Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T18:40:52.930809Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T18:41:22.323286Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=3 post_median_mb_s=5 concurrent=2
+2026-10-28T18:41:36.842702Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=4
+2026-10-28T18:42:14.009991Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:42:14.010062Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T18:44:59.499738Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=8
+2026-10-28T18:45:27.267572Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=8 post_median_mb_s=10 concurrent=2
+2026-10-28T18:45:48.568987Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=6
+2026-10-28T18:46:07.688957Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=3 to=2 pre_mb_s=6 post_median_mb_s=4 lockout=150
+2026-10-28T18:48:48.797446Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=6
+2026-10-28T18:49:25.913846Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:49:25.913866Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T18:52:18.575998Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T18:52:50.343131Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=4 post_median_mb_s=4 lockout=150
+2026-10-28T18:54:30.073650Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T18:54:45.177734Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=7 post_median_mb_s=6 lockout=150
+2026-10-28T18:57:10.174053Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T18:57:56.470252Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T18:57:56.470274Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:00:30.122258Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T19:01:11.632844Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:01:11.632866Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:03:49.606584Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T19:04:02.555998Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=7 post_median_mb_s=6 lockout=150
+2026-10-28T19:05:40.873665Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T19:06:06.224517Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=3 post_median_mb_s=11 concurrent=2
+2026-10-28T19:06:16.956713Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=5
+2026-10-28T19:06:41.232617Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=5 post_median_mb_s=14 concurrent=3
+2026-10-28T19:06:48.934797Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=4 pre_mb_s=8
+2026-10-28T19:07:25.807583Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:07:25.807611Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:09:41.927125Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T19:09:56.021775Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=7 post_median_mb_s=8 lockout=150
+2026-10-28T19:11:40.628638Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=8
+2026-10-28T19:11:54.382622Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=8 post_median_mb_s=8 lockout=150
+2026-10-28T19:13:31.237111Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T19:13:50.818582Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=4 post_median_mb_s=4 lockout=150
+2026-10-28T19:14:44.895046Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:15:15.419372Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T19:16:08.859360Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:16:39.375437Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T19:17:39.549172Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:19:03.775474Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T19:19:36.350987Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:19:36.351062Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:21:58.371991Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T19:22:16.523065Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=7 post_median_mb_s=5 lockout=150
+2026-10-28T19:23:45.184736Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T19:24:11.897170Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=4 post_median_mb_s=10 concurrent=2
+2026-10-28T19:24:19.683121Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=7
+2026-10-28T19:24:56.390026Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:24:56.390048Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:27:44.766412Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=5
+2026-10-28T19:27:58.183626Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=5 post_median_mb_s=6 concurrent=2
+2026-10-28T19:28:05.933352Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=6
+2026-10-28T19:28:41.148304Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:28:41.148382Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:31:48.131173Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=5
+2026-10-28T19:32:07.207844Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=5 post_median_mb_s=5 lockout=150
+2026-10-28T19:35:06.875197Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T19:35:34.047041Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=3 post_median_mb_s=12 concurrent=2
+2026-10-28T19:35:43.628487Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=5
+2026-10-28T19:36:20.288016Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:36:20.288038Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:39:09.841375Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=7
+2026-10-28T19:39:23.022138Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=7 post_median_mb_s=7 lockout=150
+2026-10-28T19:41:01.394178Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=5
+2026-10-28T19:41:23.640354Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=5 post_median_mb_s=5 lockout=150
+2026-10-28T19:43:17.189599Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=2
+2026-10-28T19:43:52.842814Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:43:52.842833Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:44:22.850051Z  WARN firestorm_launcher_lib::download::orchestrator: tuner (unhealthy): changeGlobalOption(max-concurrent-downloads=1) failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc)
+2026-10-28T19:46:31.622952Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=6
+2026-10-28T19:46:45.586852Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=6 post_median_mb_s=7 concurrent=2
+2026-10-28T19:46:55.611618Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=6
+2026-10-28T19:47:22.574773Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=6 post_median_mb_s=10 concurrent=3
+2026-10-28T19:47:30.244666Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=4 pre_mb_s=8
+2026-10-28T19:48:00.154640Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=8 post_median_mb_s=11 concurrent=4
+2026-10-28T19:51:59.773336Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:51:59.773381Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:52:29.779183Z  WARN firestorm_launcher_lib::download::orchestrator: tuner (unhealthy): changeGlobalOption(max-concurrent-downloads=1) failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc)
+2026-10-28T19:54:36.826810Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=8
+2026-10-28T19:54:49.680439Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=8 post_median_mb_s=10 concurrent=2
+2026-10-28T19:54:57.369991Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=10
+2026-10-28T19:55:13.333852Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=3 to=2 pre_mb_s=10 post_median_mb_s=7 lockout=150
+2026-10-28T19:56:50.180398Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=6
+2026-10-28T19:57:26.350560Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T19:57:26.350742Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T19:59:35.448415Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=6
+2026-10-28T19:59:49.832227Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=6 post_median_mb_s=6 lockout=150
+2026-10-28T20:01:45.735366Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=3
+2026-10-28T20:02:24.911964Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:02:24.912000Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T20:05:04.849201Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T20:05:42.599656Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:05:42.599677Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T20:07:46.352413Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=6
+2026-10-28T20:08:01.418907Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump reverted from=2 to=1 pre_mb_s=6 post_median_mb_s=5 lockout=150
+2026-10-28T20:09:28.009261Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T20:09:56.002538Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=4 post_median_mb_s=13 concurrent=2
+2026-10-28T20:10:23.685629Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=3 pre_mb_s=17
+2026-10-28T20:11:31.131711Z  INFO firestorm_launcher_lib::download::tuner: tuner: bump kept pre_mb_s=17 post_median_mb_s=20 concurrent=3
+2026-10-28T20:11:46.124864Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=4 pre_mb_s=7
+2026-10-28T20:12:32.801339Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:12:32.801361Z  INFO firestorm_launcher_lib::download::tuner: tuner: RPC unhealthy → reset to min concurrent concurrent=1 lockout=150
+2026-10-28T20:13:02.808630Z  WARN firestorm_launcher_lib::download::orchestrator: tuner (unhealthy): changeGlobalOption(max-concurrent-downloads=1) failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc)
+2026-10-28T20:13:47.093267Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:14:33.998581Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:15:31.873744Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:16:31.316596Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:17:01.839348Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T20:17:49.128226Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:18:19.653361Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T20:19:30.437141Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:20:00.952288Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T20:21:11.534479Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:21:42.063139Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T20:22:12.588717Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=3
+2026-10-28T20:22:43.116129Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=4
+2026-10-28T20:23:13.643852Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=5
+2026-10-28T20:23:13.643886Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 RPC unresponsive for 5 ticks — auto-respawning + resuming count=1
+2026-10-28T20:23:13.674310Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T20:23:43.676664Z  WARN firestorm_launcher_lib::download::orchestrator: tuner: initial changeGlobalOption(max-concurrent-downloads + disk-cache) failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) game_id=9
+2026-10-28T20:23:43.810007Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=91 total_files=186
+2026-10-28T20:23:46.256529Z  INFO firestorm_launcher_lib::download::orchestrator: download started (aria2 will verify existing files) game_id=9 files=186 gids=186 zip_files=2
+2026-10-28T20:24:42.118150Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:25:12.640620Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T20:25:43.166920Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=3
+2026-10-28T20:26:13.699403Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=4
+2026-10-28T20:26:52.643910Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:33:23.428349Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:34:51.234923Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:35:21.753516Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T20:35:52.282090Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=3
+2026-10-28T20:36:42.098942Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:37:26.758256Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T20:37:57.283721Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T20:38:27.810990Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=3
+2026-10-28T20:38:58.330602Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=4
+2026-10-28T20:39:28.850493Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=5
+2026-10-28T20:39:28.850520Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 RPC unresponsive for 5 ticks — auto-respawning + resuming count=1
+2026-10-28T20:39:28.876938Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T20:39:58.878782Z  WARN firestorm_launcher_lib::download::orchestrator: tuner: initial changeGlobalOption(max-concurrent-downloads + disk-cache) failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) game_id=9
+2026-10-28T20:39:59.511982Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=92 total_files=186
+2026-10-28T20:40:29.515795Z ERROR firestorm_launcher_lib::download::orchestrator: install task failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) game_id=9
+2026-10-28T22:54:34.841433Z  INFO firestorm_launcher_lib: quit requested from tray
+2026-10-28T22:54:34.929901Z  INFO firestorm_launcher_lib::download::service: killed orphan FirestormAgent.exe instance(s) from previous session
+2026-10-28T22:54:35.001701Z  WARN aria2: aria2c terminated (code: Some(1), signal: None, lifetime: 20891.5s)
+2026-10-28T22:54:35.001717Z  WARN aria2: ── last 50 lines before termination ──
+2026-10-28T22:54:35.001720Z  WARN aria2: [out]
+2026-10-28T22:54:35.001722Z  WARN aria2: [out] [#6813bf 124MiB/677MiB(18%) CN:2 DL:4.2MiB ETA:2m10s]
+2026-10-28T22:54:35.001725Z  WARN aria2: [out]
+2026-10-28T22:54:35.001727Z  WARN aria2: [out] [#6813bf 128MiB/677MiB(19%) CN:2 DL:4.2MiB ETA:2m9s]
+2026-10-28T22:54:35.001731Z  WARN aria2: [out]
+2026-10-28T22:54:35.001732Z  WARN aria2: [out] [#6813bf 132MiB/677MiB(19%) CN:2 DL:4.1MiB ETA:2m9s]
+2026-10-28T22:54:35.001734Z  WARN aria2: [out]
+2026-10-28T22:54:35.001736Z  WARN aria2: [out] [#6813bf 136MiB/677MiB(20%) CN:2 DL:4.1MiB ETA:2m10s]
+2026-10-28T22:54:35.001738Z  WARN aria2: [out]
+2026-10-28T22:54:35.001740Z  WARN aria2: [out] [#6813bf 140MiB/677MiB(20%) CN:2 DL:4.1MiB ETA:2m9s]
+2026-10-28T22:54:35.001742Z  WARN aria2: [out]
+2026-10-28T22:54:35.001744Z  WARN aria2: [out] [#6813bf 144MiB/677MiB(21%) CN:2 DL:4.1MiB ETA:2m9s]
+2026-10-28T22:54:35.001748Z  WARN aria2: [out]
+2026-10-28T22:54:35.001751Z  WARN aria2: [out] [#6813bf 148MiB/677MiB(21%) CN:2 DL:4.0MiB ETA:2m10s]
+2026-10-28T22:54:35.001752Z  WARN aria2: [out]
+2026-10-28T22:54:35.001754Z  WARN aria2: [out] [#6813bf 152MiB/677MiB(22%) CN:2 DL:4.0MiB ETA:2m8s]
+2026-10-28T22:54:35.001756Z  WARN aria2: [out]
+2026-10-28T22:54:35.001758Z  WARN aria2: [out] [#6813bf 157MiB/677MiB(23%) CN:2 DL:4.1MiB ETA:2m5s]
+2026-10-28T22:54:35.001760Z  WARN aria2: [out]
+2026-10-28T22:54:35.001762Z  WARN aria2: [out]  *** Download Progress Summary as of Thu Oct 29 01:53:56 2026 ***
+2026-10-28T22:54:35.001764Z  WARN aria2: [out] ===============================================================================
+2026-10-28T22:54:35.001766Z  WARN aria2: [out] [#6813bf 161MiB/677MiB(23%) CN:2 DL:4.1MiB ETA:2m5s]
+2026-10-28T22:54:35.001768Z  WARN aria2: [out] FILE: D:/igra/The War Within/Data/data/data.076
+2026-10-28T22:54:35.001770Z  WARN aria2: [out] -------------------------------------------------------------------------------
+2026-10-28T22:54:35.001773Z  WARN aria2: [out]
+2026-10-28T22:54:35.001775Z  WARN aria2: [out] [#6813bf 161MiB/677MiB(23%) CN:2 DL:4.1MiB ETA:2m5s]
+2026-10-28T22:54:35.001777Z  WARN aria2: [out]
+2026-10-28T22:54:35.001779Z  WARN aria2: [out] [#6813bf 161MiB/677MiB(23%) CN:2 DL:3.6MiB ETA:2m21s]
+2026-10-28T22:54:35.001781Z  WARN aria2: [out]
+2026-10-28T22:54:35.001783Z  WARN aria2: [out] [#6813bf 164MiB/677MiB(24%) CN:2 DL:3.4MiB ETA:2m26s]
+2026-10-28T22:54:35.001785Z  WARN aria2: [out]
+2026-10-28T22:54:35.001788Z  WARN aria2: [out] [#6813bf 166MiB/677MiB(24%) CN:2 DL:3.3MiB ETA:2m33s]
+2026-10-28T22:54:35.001792Z  WARN aria2: [out]
+2026-10-28T22:54:35.001793Z  WARN aria2: [out] [#6813bf 171MiB/677MiB(25%) CN:2 DL:3.3MiB ETA:2m32s]
+2026-10-28T22:54:35.001795Z  WARN aria2: [out]
+2026-10-28T22:54:35.001797Z  WARN aria2: [out] [#6813bf 175MiB/677MiB(25%) CN:2 DL:3.3MiB ETA:2m31s]
+2026-10-28T22:54:35.001799Z  WARN aria2: [out]
+2026-10-28T22:54:35.001802Z  WARN aria2: [out] [#6813bf 179MiB/677MiB(26%) CN:2 DL:3.3MiB ETA:2m28s]
+2026-10-28T22:54:35.001804Z  WARN aria2: [out]
+2026-10-28T22:54:35.001806Z  WARN aria2: [out] [#6813bf 182MiB/677MiB(26%) CN:2 DL:3.2MiB ETA:2m31s]
+2026-10-28T22:54:35.001808Z  WARN aria2: [out]
+2026-10-28T22:54:35.001809Z  WARN aria2: [out] [#6813bf 187MiB/677MiB(27%) CN:2 DL:3.2MiB ETA:2m29s]
+2026-10-28T22:54:35.001812Z  WARN aria2: [out]
+2026-10-28T22:54:35.001813Z  WARN aria2: [out] [#6813bf 191MiB/677MiB(28%) CN:2 DL:3.3MiB ETA:2m26s]
+2026-10-28T22:54:35.001815Z  WARN aria2: [out]
+2026-10-28T22:54:35.001817Z  WARN aria2: [out] [#6813bf 196MiB/677MiB(28%) CN:2 DL:3.7MiB ETA:2m7s]
+2026-10-28T22:54:35.001819Z  WARN aria2: [out]
+2026-10-28T22:54:35.001821Z  WARN aria2: [out] [#6813bf 199MiB/677MiB(29%) CN:2 DL:0B]
+2026-10-28T22:54:35.001824Z  WARN aria2: [out]
+2026-10-28T22:54:35.001825Z  WARN aria2: [out] [#6813bf 202MiB/677MiB(29%) CN:2 DL:3.3MiB ETA:2m20s]
+2026-10-28T22:54:35.001828Z  WARN aria2: ──────────────────────────────────────
+2026-10-28T22:54:37.626903Z  INFO firestorm_launcher_lib: logging: file sink at C:\Users\<user>\AppData\Roaming\com.firestorm.launcher\logs
+2026-10-28T22:54:37.626951Z  INFO firestorm_launcher_lib: Firestorm Launcher starting version="2.0.30" target="windows" arch="x86_64"
+2026-10-28T22:54:37.626974Z  INFO firestorm_launcher_lib::config: Config loaded
+2026-10-28T22:54:38.878807Z  INFO splash: mount
+2026-10-28T22:54:38.879285Z  INFO splash: updater: check() start
+2026-10-28T22:54:39.515922Z  INFO splash: updater: no update available
+2026-10-28T22:54:39.516316Z  INFO splash: handoff: no-update
+2026-10-28T22:54:39.565106Z  INFO firestorm_launcher_lib::download::service: download service: lazy-spawning on first access
+2026-10-28T22:54:40.018968Z  WARN firestorm_launcher_lib::system::geolocation: geolocation: ipapi.co lookup failed: HTTP 429 Too Many Requests: {'error': True, 'reason': 'RateLimited', 'message': 'Visit https://ipapi.co/ratelimited/ for details'}
+2026-10-28T22:54:40.160651Z  INFO firestorm_launcher_lib::download::service: aria2c 1.37.0 ready on RPC port 16800 (attempt 1)
+2026-10-28T22:54:40.197040Z  INFO firestorm_launcher_lib::windows::commands: splash_done: session restore restored=true
+2026-10-28T22:54:40.197097Z  INFO firestorm_launcher_lib::windows: open_main_window: building main window width=1600.0 height=900.0
+2026-10-28T22:54:40.198291Z  INFO firestorm_launcher_lib::windows: open_main_window: main window built + shown
+2026-10-28T22:54:40.198370Z  INFO firestorm_launcher_lib::windows::commands: splash_done: tearing down aux windows
+2026-10-28T22:54:40.198655Z  INFO firestorm_launcher_lib::windows::commands: splash_done: closing splash
+2026-10-28T22:54:40.198792Z  INFO firestorm_launcher_lib::windows::commands: splash_done: complete
+2026-10-28T22:54:40.636033Z  WARN firestorm_launcher_lib::tracking::commands: FlagLauncherActivity failed (ignored) error=Api { error_id: 403, error_msg: "Accesss denied" }
+2026-10-28T22:55:09.759980Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T22:55:09.765989Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=0 total_files=186
+2026-10-28T22:55:09.780522Z  INFO firestorm_launcher_lib::download::orchestrator: download started (aria2 will verify existing files) game_id=9 files=186 gids=186 zip_files=2
+2026-10-28T22:55:17.441269Z  INFO firestorm_launcher_lib::download::tuner: tuner: trying higher concurrency concurrent=2 pre_mb_s=4
+2026-10-28T22:55:39.092589Z  INFO firestorm_launcher_lib::download::orchestrator: download cancelled game_id=9 delete_files=false
+2026-10-28T22:56:00.791842Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T22:56:00.799429Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=112 total_files=186
+2026-10-28T22:56:00.812977Z  INFO firestorm_launcher_lib::download::orchestrator: download started (aria2 will verify existing files) game_id=9 files=186 gids=186 zip_files=2
+2026-10-28T22:57:51.468966Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T22:58:21.985810Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T22:58:52.510604Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=3
+2026-10-28T22:59:23.033824Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=4
+2026-10-28T22:59:53.560502Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=5
+2026-10-28T22:59:53.560523Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 RPC unresponsive for 5 ticks — auto-respawning + resuming count=1
+2026-10-28T22:59:54.044592Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T22:59:59.028342Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=112 total_files=186
+2026-10-28T23:00:09.009650Z  INFO firestorm_launcher_lib::download::orchestrator: download started (aria2 will verify existing files) game_id=9 files=186 gids=186 zip_files=2
+2026-10-28T23:02:39.427952Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T23:03:09.944791Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T23:03:40.465619Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=3
+2026-10-28T23:04:10.994650Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=4
+2026-10-28T23:04:41.517399Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=5
+2026-10-28T23:04:41.517426Z ERROR firestorm_launcher_lib::download::orchestrator: aria2 RPC unresponsive again within 600 s of previous respawn — sustained block (antivirus / EDR / OS filter), surfacing antivirus_blocked to <user> count=1 elapsed_secs=287
+2026-10-28T23:06:34.862402Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T23:07:04.875374Z  WARN firestorm_launcher_lib::download::orchestrator: tuner: initial changeGlobalOption(max-concurrent-downloads + disk-cache) failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) game_id=9
+2026-10-28T23:07:06.253259Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=112 total_files=186
+2026-10-28T23:07:36.256919Z ERROR firestorm_launcher_lib::download::orchestrator: install task failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) game_id=9
+2026-10-28T23:14:09.904991Z  INFO firestorm_launcher_lib: quit requested from tray
+2026-10-28T23:14:10.268057Z  INFO firestorm_launcher_lib::download::service: killed orphan FirestormAgent.exe instance(s) from previous session
+2026-10-28T23:14:26.371742Z  INFO firestorm_launcher_lib: logging: file sink at C:\Users\<user>\AppData\Roaming\com.firestorm.launcher\logs
+2026-10-28T23:14:26.371789Z  INFO firestorm_launcher_lib: Firestorm Launcher starting version="2.0.30" target="windows" arch="x86_64"
+2026-10-28T23:14:26.371814Z  INFO firestorm_launcher_lib::config: Config loaded
+2026-10-28T23:14:27.471655Z  INFO splash: mount
+2026-10-28T23:14:27.473842Z  INFO splash: updater: check() start
+2026-10-28T23:14:27.790438Z  INFO splash: updater: no update available
+2026-10-28T23:14:27.790657Z  INFO splash: handoff: no-update
+2026-10-28T23:14:28.189370Z  INFO firestorm_launcher_lib::download::service: download service: lazy-spawning on first access
+2026-10-28T23:14:28.435672Z  INFO firestorm_launcher_lib::system::geolocation: geolocation: detected country = BY
+2026-10-28T23:14:28.606028Z  INFO firestorm_launcher_lib::windows::commands: splash_done: session restore restored=true
+2026-10-28T23:14:28.606067Z  INFO firestorm_launcher_lib::windows: open_main_window: building main window width=1600.0 height=900.0
+2026-10-28T23:14:28.607039Z  INFO firestorm_launcher_lib::windows: open_main_window: main window built + shown
+2026-10-28T23:14:28.607090Z  INFO firestorm_launcher_lib::windows::commands: splash_done: tearing down aux windows
+2026-10-28T23:14:28.607162Z  INFO firestorm_launcher_lib::windows::commands: splash_done: closing splash
+2026-10-28T23:14:28.607180Z  INFO firestorm_launcher_lib::windows::commands: splash_done: complete
+2026-10-28T23:14:28.832908Z  INFO firestorm_launcher_lib::download::service: aria2c 1.37.0 ready on RPC port 16800 (attempt 1)
+2026-10-28T23:14:29.085565Z  WARN firestorm_launcher_lib::tracking::commands: FlagLauncherActivity failed (ignored) error=Api { error_id: 403, error_msg: "Accesss denied" }
+2026-10-28T23:14:53.288532Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T23:14:53.293806Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=112 total_files=186
+2026-10-28T23:14:53.309874Z  INFO firestorm_launcher_lib::download::orchestrator: download started (aria2 will verify existing files) game_id=9 files=186 gids=186 zip_files=2
+2026-10-28T23:16:26.609749Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T23:16:57.141248Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T23:17:27.645811Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=3
+2026-10-28T23:20:09.530017Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T23:20:40.043042Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T23:21:10.555392Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=3
+2026-10-28T23:21:41.063027Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=4
+2026-10-28T23:22:11.576054Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=5
+2026-10-28T23:22:11.576127Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 RPC unresponsive for 5 ticks — auto-respawning + resuming count=1
+2026-10-28T23:22:11.638595Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T23:22:20.912694Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=112 total_files=186
+2026-10-28T23:22:34.697055Z  INFO firestorm_launcher_lib::download::orchestrator: download started (aria2 will verify existing files) game_id=9 files=186 gids=186 zip_files=2
+2026-10-28T23:24:01.051278Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=1
+2026-10-28T23:24:31.601604Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=2
+2026-10-28T23:25:02.119090Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=3
+2026-10-28T23:25:32.647384Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=4
+2026-10-28T23:26:03.165077Z  WARN firestorm_launcher_lib::download::orchestrator: aria2 multicall failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) consecutive_failures=5
+2026-10-28T23:26:03.165108Z ERROR firestorm_launcher_lib::download::orchestrator: aria2 RPC unresponsive again within 600 s of previous respawn — sustained block (antivirus / EDR / OS filter), surfacing antivirus_blocked to <user> count=1 elapsed_secs=231
+2026-10-28T23:32:42.055822Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T23:32:57.993676Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=112 total_files=186
+2026-10-28T23:33:28.005575Z ERROR firestorm_launcher_lib::download::orchestrator: install task failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) game_id=9
+2026-10-28T23:40:44.048410Z  INFO firestorm_launcher_lib::download::orchestrator: download cancelled game_id=9 delete_files=false
+2026-10-28T23:41:24.817332Z  INFO firestorm_launcher_lib::download::orchestrator: tuner: initialized game_id=9 disk="HDD" split=2 max_conn=4 initial_concurrent=1
+2026-10-28T23:41:54.831332Z  WARN firestorm_launcher_lib::download::orchestrator: tuner: initial changeGlobalOption(max-concurrent-downloads + disk-cache) failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) game_id=9
+2026-10-28T23:41:55.203840Z  INFO firestorm_launcher_lib::download::orchestrator: pre-scan: counted existing manifest entries on disk game_id=9 verify_target=112 total_files=186
+2026-10-28T23:42:25.212669Z ERROR firestorm_launcher_lib::download::orchestrator: install task failed: internal: aria2 RPC transport: error sending request for url (http://127.0.0.1:16800/jsonrpc) game_id=9
+2026-10-28T23:42:58.574298Z  INFO firestorm_launcher_lib::download::service: killed orphan FirestormAgent.exe instance(s) from previous session
